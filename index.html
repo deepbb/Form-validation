@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Form Validation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form class="form-control">
+       <div class="container">
+        <h5>Register With us</h5>
+           <div class="form-input">
+               <label>Enter your name</label>
+               <input id="name" type="text" placeholder="Name" required>
+               <small id="error" class="error">user name is required</small>
+           </div>
+           <div class="form-input">
+            <label>Enter your E-mail</label>
+            <input id="email" type="email" placeholder="E-mail" required>
+            <small class="error">emailid  is required</small>
+        </div>
+        <div class="form-input">
+            <label>Enter  password</label>
+            <input id="password" type="password" placeholder="Password">
+            <small class="error">password is required</small>
+        </div>
+        <div class="form-input">
+            <label>Confirm  Password</label>
+            <input id="password2" type="password" placeholder="Password">
+            <small class="error">password doesnt match</small>
+        </div>
+        <button class="btn" id="btn" type="submit"><span>Submit Form</span></button>
+       </div>
+       
+       </form>
+        <script src="app.js" async defer></script>
+    </body>
+</html>
